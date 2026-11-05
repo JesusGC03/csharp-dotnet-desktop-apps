@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.37628.2 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApWinForms", "ApWinForms.csproj", "{BAC2757E-C764-4306-B053-681D42A819E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BDFamosos", "..\BDFamosos\BDFamosos.csproj", "{95C28D40-66D7-4EF3-A5FC-5D959AD54C7B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BAC2757E-C764-4306-B053-681D42A819E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAC2757E-C764-4306-B053-681D42A819E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAC2757E-C764-4306-B053-681D42A819E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAC2757E-C764-4306-B053-681D42A819E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95C28D40-66D7-4EF3-A5FC-5D959AD54C7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95C28D40-66D7-4EF3-A5FC-5D959AD54C7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95C28D40-66D7-4EF3-A5FC-5D959AD54C7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95C28D40-66D7-4EF3-A5FC-5D959AD54C7B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C3D61615-813B-4CDA-80D4-B98CA980E91F}
+	EndGlobalSection
+EndGlobal

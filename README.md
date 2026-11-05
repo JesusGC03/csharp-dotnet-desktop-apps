@@ -19,6 +19,7 @@ Developed as part of the **Visual Programming (Programación Visual)** curriculu
 
 * **Event-Driven Architecture:** UI lifecycle management, custom event publishers/subscribers, and form communication across modal/modeless dialogs.
 * **Custom GDI+ 2D Vector Graphics:** Math-driven rendering (`Graphics`, `Pen`, `Brush`, trigonometric projection) for responsive analog clock faces and real-time hand animation.
+* **N-Tier Database Architecture & ADO.NET:** Decoupled 3-tier enterprise pattern (DAL, BLL, UI) executing SQL Server stored procedures and custom data-bound UserControls.
 * **Thread-Safe UI Synchronization:** Concurrency handling with `Thread` and `BackgroundWorker`, avoiding cross-thread race conditions via `Control.Invoke` and `BeginInvoke`.
 * **State Management & Persistence:** Dynamic timezone data structures, list serialization, and multi-form state propagation.
 * **Input Validation & Security:** Form-level validation using regular expressions, masked password inputs, and `ErrorProvider` feedback.
@@ -35,7 +36,8 @@ csharp-dotnet-desktop-apps/
 │   ├── P3_Reloj/                # Analog clock UserControl with custom GDI+ drawing (OnPaint)
 │   ├── P4_Reloj/                # World clock with dynamic timezone calculation and persistence
 │   ├── P5_VisorImagenes/        # Image processing viewer with zooming, filtering, and scaling
-│   └── P6_Hilos/                # Multithreaded processing engine with thread-safe UI updates
+│   ├── P6_Hilos/                # Multithreaded processing engine with thread-safe UI updates
+│   └── P7_BaseDatos_N-Capas/    # N-Tier architecture (DAL, BLL, BO, UI) with ADO.NET & SQL Server
 └── 02-ejercicios-tematicos/
     ├── Ejercicio2-Tema1-PEI1/   # Secure authentication dialog with password masking
     ├── Ejercicio3_Tema1_Parte1/ # Parent-child form ownership and lifecycle delegation
@@ -66,6 +68,11 @@ csharp-dotnet-desktop-apps/
 * Enforces strict regex validation patterns on text fields before persistence.
 * Visual error notification with contextual tooltips and real-time error clearance.
 
+### 5. N-Tier Enterprise Database Application (`P7_BaseDatos_N-Capas`)
+* **Decoupled Architecture:** Strict separation of concerns between Data Access Layer (`CFamosoDAL`), Business Logic Layer (`CFamosoBLL`), and Business Objects (`CFamosoBO`, `ColCFamosos`).
+* **ADO.NET Integration:** Executes SQL Server Stored Procedures (`stproObtenerFilasFamosos`) using `SqlConnection`, `SqlCommand`, and `SqlDataReader` with safe resource disposal (`using` blocks).
+* **Custom Data-Bound UserControl:** Custom UI control (`ElementoLista`) binding database entities directly to UI components with custom image format conversion handlers (`StringToBitmap`).
+
 ---
 
 ## 🛠️ Toolchain & Execution
@@ -83,3 +90,4 @@ Telematics Engineering Student @ Universidad de Alcalá (UAH)
 - LinkedIn: [linkedin.com/in/jesus-gay](https://www.linkedin.com/in/jesus-gay)  
 - GitHub: [@JesusGC03](https://github.com/JesusGC03)  
 - Email: [jgaycanelada@gmail.com](mailto:jgaycanelada@gmail.com)
+
