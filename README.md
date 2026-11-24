@@ -44,7 +44,8 @@ csharp-dotnet-desktop-apps/
     ├── Ejercicio6_Tema2/        # Dynamic control generation and runtime event routing
     ├── Ejercicio7-Tema3/        # Form validation using Regex and ErrorProvider controls
     ├── Ejercicio10_Tema5_Imagenes/ # Image manipulation with GDI+ and PictureBox controls
-    └── Ejercicio11_Tema6_Hilos/    # Concurrent background workers with progress reporting
+    ├── Ejercicio11_Tema6_Hilos/    # Concurrent background workers with progress reporting
+    └── Ejercicio12_Tema7_BBDD/     # ADO.NET SQL database management and DAL/BO persistence
 ```
 
 ---
@@ -72,6 +73,10 @@ csharp-dotnet-desktop-apps/
 * **Decoupled Architecture:** Strict separation of concerns between Data Access Layer (`CFamosoDAL`), Business Logic Layer (`CFamosoBLL`), and Business Objects (`CFamosoBO`, `ColCFamosos`).
 * **ADO.NET Integration:** Executes SQL Server Stored Procedures (`stproObtenerFilasFamosos`) using `SqlConnection`, `SqlCommand`, and `SqlDataReader` with safe resource disposal (`using` blocks).
 * **Custom Data-Bound UserControl:** Custom UI control (`ElementoLista`) binding database entities directly to UI components with custom image format conversion handlers (`StringToBitmap`).
+
+### 6. Relational Database Management & CRUD Persistence (`Ejercicio12_Tema7_BBDD`)
+* **SQL DDL/DML Schema Definition:** Bundles relational schema definition and seeding scripts (`bd_telefonos.sql`).
+* **Direct ADO.NET Data Access:** Implements parameterized queries, connection lifecycle management, and strongly-typed domain collections (`ColeccionTfnos`) using `CTelefonoDAL` and `CTelefonoBO`.
 
 ---
 
